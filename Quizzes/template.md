@@ -1,8 +1,5 @@
 # Quiz ?
 
-A:
-
-B:
 
 ## Code
 
