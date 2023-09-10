@@ -14,10 +14,8 @@ B:
 
 <sub>Fig.1 shows results of the program
 
-## Truth table
-  
-<sub>Fig.2 shows the truth table
+## Flowchart
 
-## Circuit
+<sub>Fig.2 shows results of the program
 
-<sub>Fig.3 shows the boolean circuit for part B
+
