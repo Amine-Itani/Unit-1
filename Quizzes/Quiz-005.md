@@ -1,8 +1,3 @@
-# Quiz 5
-This algorithm sums up the number of letters of an input string based on the position of the letter in the alphabet
-We wrote the steps down for this one because it allowed us to understand it better, and an intermiediate stgep was the flowchart
-
-Fig 1: Steps of the program, the code and the flowchart
 # Quiz 005
 This algorithm sums up the number of letters of an input string based on the position of the letter in the alphabet
 We wrote the steps down for this one because it allowed us to understand it better, and an intermiediate stgep was the flowchart
