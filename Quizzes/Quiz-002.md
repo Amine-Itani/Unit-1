@@ -5,18 +5,20 @@ It was relatively easy, but the hl with lists took me more time
 ## Code
 
 ```py
-value1 = int(input("Please enter a number"))
-value2 = int(input("Please enter a number"))
-
-if value1 == 20 or value2 == 20 or value1 + value2 == 20:
+value1 = [10, 30, 10, 26]
+value2 = [12, 15, 5, -6]
+if 20 in value1 or 20 in value2:
+    print("True")
+for x in range(len(value1)):
+    value1[x] += value2[x]
+if 20 in value1:
     print("True")
 else:
     print("False")
 ```
 
 ## Evidence
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/bc944772-bb78-4c8e-8b55-d994dd0096f7)
-
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/5a6c8d80-788c-4096-9ce2-5e37fea4cc71)
 <sub>Fig.1 shows results of the program
 
 ## Flowchart
