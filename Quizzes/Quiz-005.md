@@ -1,6 +1,7 @@
 # Quiz 005
-This algorithm sums up the number of letters of an input string based on the position of the letter in the alphabet
-We wrote the steps down for this one because it allowed us to understand it better, and an intermiediate stgep was the flowchart
+This algorithm sums up the number of letters of an input string based on the position of the letter in the alphabet.
+We wrote the steps down for this one because it allowed us to understand it better, and our intermiediate step was the flowchart.
+I did not understand the HL part of this exercise. I understand that the 1300 was added to the M is capital and it is the 13th letter of the alphabet, but where did the additional 56 come from?
 ## Code
 
 ```py
