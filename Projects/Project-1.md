@@ -50,7 +50,9 @@ Justify the tools/structure of your solution
 # Criteria B: Design
 
 ## System Diagram
-
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/2e5cdb65-1e4d-4126-a7ff-e7739eaeaa36)
+Fig. 1 Shows the system diagram
+Fig. 1 Red box at the left represents the input hardware (keybaord). Red box at the right represents the output hardware (screen). In between, we can find the processing in the big overarching box (Windows 11, 16GB RAM, 12th Gen Intel), the coding language used (Python 3.10.11) in the smaller box, and the potential python and csv files that will be used in the smallest box.
 ## Flow Diagrams
 
 
