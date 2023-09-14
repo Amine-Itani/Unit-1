@@ -36,8 +36,10 @@ Justify the tools/structure of your solution
 
 ## Flow Diagrams
 ### Login system
+
 ![unnamed](https://github.com/Amine-Itani/Unit-1/assets/123438294/eddfa485-33c6-4cce-abac-b16e8b561686)
 <sub>Flow diagram for the registration system. Note: there is some Python code in the operations.
+
 ## Record of Tasks
 | Task No | Planned Action                           | Planned Outcome                                                                          | Time estimated | Target completion date | Criterion |
 |---------|------------------------------------------|------------------------------------------------------------------------------------------|----------------|------------------------|-----------|
