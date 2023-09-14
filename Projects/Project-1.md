@@ -25,7 +25,7 @@ Justify the tools/structure of your solution
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
 4. The electronic ledger will offer useful statistics about whether Ms. Sato has profited today, her most profitable day by day change, and her total amount in USD compared to intial investement. It will also predict value in a month based on yesterday to today.
-5. The electronic ledger will organize transactions by month.
+5. The electronic ledger will organize transactions by month + graphs.
 6. The electronic ledger will be secured with a password and username that will be set by the user.
 
 # Criteria B: Design
