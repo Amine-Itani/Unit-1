@@ -38,7 +38,7 @@ Justify the tools/structure of your solution
 ### Login system
 
 ![unnamed](https://github.com/Amine-Itani/Unit-1/assets/123438294/eddfa485-33c6-4cce-abac-b16e8b561686)
-<sub>Flow diagram for the registration system. Note: there is some Python code in the operations.
+<sub>**Fig. 2** Flow diagram for the registration system. Note: there is some Python code in the operations.
 
 ## Record of Tasks
 | Task No | Planned Action                           | Planned Outcome                                                                          | Time estimated | Target completion date | Criterion |
@@ -51,7 +51,7 @@ Justify the tools/structure of your solution
 
 ## Login System
 My client requires a system to protect their private data. I thought about using a login system to accomplish this requirement using an if condition and a for loop.
-The flow diagram for the diagram is show in ***Figure 2**. In the first line of the code I am defining a function called try_login with two inputs, name and password both are type string. 
+The flow diagram for the diagram is show in **Figure 2**. In the first line of the code I am defining a function called try_login with two inputs, name and password both are type string. 
 The output of the function is boolea because I only need a True if the user and password exist in the database file.
 '''.py
 def try_login(name:str, password:str)->bool:
