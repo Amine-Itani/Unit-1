@@ -38,7 +38,7 @@ print(case1)
 ```
 
 ## Evidence
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/7b654764-68d1-443e-ae4f-d2383e6af816)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/24b7790a-2326-4f04-ab52-a8b60ebbe71a)
 <sub>Fig.1 shows results of the program
 
 ## Flowchart
