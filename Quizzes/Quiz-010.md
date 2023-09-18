@@ -22,6 +22,6 @@ print(out)
 <sub>Fig.1 shows results of the program
 
 ## Flowchart
-![unnamed](https://github.com/Amine-Itani/Unit-1/assets/123438294/d72fa493-dfeb-401d-9366-e80e5fd0c549)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/f721da45-dcc3-417e-af17-07409ced8165)
 <sub>Fig.2 shows results of the program
 
