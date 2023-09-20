@@ -7,7 +7,7 @@
 
 ## Problem definition
 
-Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all his transaction using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms Sato to find past transactions or important statistics about the currency. Ms Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics. 
+Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all her transaction using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms. Sato to find past transactions or important statistics about the currency. Ms. Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics. 
 
 Apart for this requirements, Ms Sato is open to explore a cryptocurrency selected by the developer.
 
@@ -25,8 +25,8 @@ Justify the tools/structure of your solution
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
 4. The electronic ledger will offer useful statistics about whether Ms. Sato has profited today, her most profitable day by day change, and her total amount in USD compared to intial investement. It will also predict value in a month based on yesterday to today.
-5. The electronic ledger will organize transactions by month + graphs.
-6. The electronic ledger will be secured with a password and username that will be set by the user.
+5. The electronic ledger will connect to an API to fetch the price of KlimaDAO upon opening any of the ledgers sub-menus.
+6. The electronic ledger will be organized with tables and graphs.
 
 # Criteria B: Design
 
