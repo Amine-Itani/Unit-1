@@ -1,5 +1,5 @@
 # Quiz 012
-Similar to Quiz 011, this quiz was another blackbox. This one took me longer than it should've 😅. I hope I'll do better tomorrow!
+Similar to Quiz 011, this quiz was another blackbox. This one took me longer than it should've 😅. I hope I'll do better tomorrow!  
 The answer involved squaring input A then adding input B.
 ## Code
 
