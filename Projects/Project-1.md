@@ -22,8 +22,8 @@ Justify the tools/structure of your solution
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
-2. The electronic ledger display the basic description of the cyrptocurrency selected.
-3. The electronic ledger allows to enter, withdraw and record transactions.
+2. The electronic ledger displays the basic description of the cyrptocurrency selected.
+3. The electronic ledger allows user to enter, withdraw and record transactions.
 4. The electronic ledger will offer useful statistics about whether Ms. Sato has profited today, her most profitable day by day change, and her total amount in USD compared to intial investement. It will also predict value in a month based on yesterday to today.
 5. The electronic ledger will connect to an API to fetch the price of KlimaDAO upon opening any of the ledgers sub-menus.
 6. The electronic ledger will be organized with tables and graphs.
