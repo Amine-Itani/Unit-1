@@ -76,5 +76,4 @@ if result == False: # uname or pass incorrect, attempts exceeded
     exit(1) # end the program
 
 if result == True: # access granted
-    # continue ledger funtion
 '''
