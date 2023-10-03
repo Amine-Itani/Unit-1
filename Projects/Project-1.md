@@ -64,8 +64,12 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 My client requires a system to protect their private data. I thought about using a login system to accomplish this requirement using an if condition and a for loop.
 The flow diagram for the diagram is show in **Figure 2**. In the first line of the code I am defining a function called try_login with two inputs, name and password both are type string. 
 The output of the function is boolea because I only need a True if the user and password exist in the database file.
-'''.py
-while result == False and attempts > 0: # result default false and check for attempts not exceeded
+```.py
+'''
+Login system
+:return: Access granted or denied
+'''
+while result == False and attempts > 0: #  while result false (result false by default) and check for attempts not exceeded
     name = input(f"{bold_red}ERROR.{end_code} Please enter your username again:")
     password = input("Please enter your password:")
     result = try_login(name=name, password=password) # check with csv file
@@ -76,4 +80,5 @@ if result == False: # uname or pass incorrect, attempts exceeded
     exit(1) # end the program
 
 if result == True: # access granted
-'''
+    # continue ledger functions
+```
