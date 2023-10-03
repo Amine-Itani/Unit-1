@@ -61,24 +61,41 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 ## Functions
 
 ### Login System
-My client requires a system to protect their private data. I thought about using a login system to accomplish this requirement using an if condition and a for loop.
-The flow diagram for the diagram is show in **Figure 2**. In the first line of the code I am defining a function called try_login with two inputs, name and password both are type string. 
-The output of the function is boolea because I only need a True if the user and password exist in the database file.
 ```.py
 '''
 Login system
 :return: Access granted or denied
 '''
-while result == False and attempts > 0: #  while result false (result false by default) and check for attempts not exceeded
+while access == False and attempts > 0: #  while access false (access false by default) and check for attempts not exceeded
     name = input(f"{bold_red}ERROR.{end_code} Please enter your username again:")
     password = input("Please enter your password:")
-    result = try_login(name=name, password=password) # check with csv file
+    access = try_login(name=name, password=password) # check with csv file
     attempts -= 1 # use an attempt
 
-if result == False: # uname or pass incorrect, attempts exceeded
+if access == False: # uname or pass incorrect, attempts exceeded
     print(f"{bold_red}You are not authorized. Exiting{end_code}")
     exit(1) # end the program
 
-if result == True: # access granted
+if access == True: # access granted
     # continue ledger functions
+```
+Ms. Sato requires a system to protect their private data. I thought about using a login system to accomplish this using a while loop and if statements. The while loops continues when access is false and attempts > 0, and asks for user input, which the if statements check with the csv file where usernames and passwords are saved (more on reading csv files in a later function) to verify them. The while loop also decreases attempts by 1 from 3 to eventually stop the program if too many attempts (+3) are made. If access is true, the if statements will allow the program to keep going. The flow diagram for this function is show in **Figure 2**.
+
+### Deposits and Withdrawals
+```.py
+def deposit(choice):
+    '''
+    This function appends a deposit or withdrawal to the csv file with the date it was commited.
+    :return: Thank you message (feedback) and main menu
+    '''
+    multiplier = 1 # If withdrawal is picked, the multiplier is set to -1, turning the appended number in the csv file negative
+    word_choice = 'withdrawal' # Word_choice variable used to correspond word in feedback msg to the action requested
+    # These are determined by simple if statements that take user input that are omitted here, and validated by a different function
+    amount = take_validate_user_input(msg=f"{deposit_prompt} {word_choice}:", menu="") # Take in user input
+    date = datetime.date.today()  # creating the date with the datetime imported function
+    with open('ledger.csv', mode='a') as f:  # appending deposit/withdrawal
+        line = f"{date},{amount * multiplier}\n" # defining line as date and amount 
+        f.writelines(line) # writing lines in csv file
+    print(f"\n{yellow}Klima conversion: {amount} USD --> {round(amount / klima_price)} KLIMA today{end_code}\n{green}Saved.{end_code} "
+          f"Thank you for recording your transaction in this ledger. Hope to see you again soon!\nThis deposit was made on {date}\n{green_seperator}")  # User Feedback
 ```
