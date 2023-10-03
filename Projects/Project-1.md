@@ -58,35 +58,23 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 
 # Criteria C: Development
 
-## Login System
+## Functions
+
+### Login System
 My client requires a system to protect their private data. I thought about using a login system to accomplish this requirement using an if condition and a for loop.
 The flow diagram for the diagram is show in **Figure 2**. In the first line of the code I am defining a function called try_login with two inputs, name and password both are type string. 
 The output of the function is boolea because I only need a True if the user and password exist in the database file.
 '''.py
-def try_login(name:str, password:str)->bool:
-    with open("users.csv", mode='r') as f:
-        data = f.readlines()
-    logged_in = False
-    for line in data:
-        uname = line.split(',')[0]
-        upass = line.split(',')[1].strip() # remove \n
+while result == False and attempts > 0: # result default false and check for attempts not exceeded
+    name = input(f"{bold_red}ERROR.{end_code} Please enter your username again:")
+    password = input("Please enter your password:")
+    result = try_login(name=name, password=password) # check with csv file
+    attempts -= 1 # use an attempt
 
-        if uname == name and upass == password:
-            logged_in = True
-            break
-    return logged_in
+if result == False: # uname or pass incorrect, attempts exceeded
+    print(f"{bold_red}You are not authorized. Exiting{end_code}")
+    exit(1) # end the program
 
-attempts = 3
-name = input("Please enter your username")
-password = input("Please enter your password")
-result = try_login(name=name,password=password)
-while result == False and attempts > 0:
-    name = input("[Error] Please enter your username")
-    password = input("Please enter your password")
-    result = try_login(name=name, password=password)
-    attempts -= 1
-
-if result == False:
-    print("You are not authorized. Exiting")
-    exit(1) # finish the program
+if result == True: # access granted
+    # continue ledger funtion
 '''
