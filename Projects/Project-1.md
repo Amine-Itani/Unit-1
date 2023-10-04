@@ -42,13 +42,24 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 
 ## System Diagram
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/e859bd2d-13e6-4756-983c-efcfa0ba84e3)
-<sub>Fig. 1 Shows the system diagram. Red box at the left represents the input hardware (keybaord). Red box at the right represents the output hardware (screen). In between, we can find the processing in the big overarching box (Windows 11, 16GB RAM, 12th Gen Intel), the coding language used (Python 3.10.11) in the smaller box. In the smallest box, we have the Python file that runs the code and the Python libraries (ledger_lib.py made by developer and others external) that it pulls from. We also have the csv files the program stores information in such as user verification and balances.
+<sub>**Fig. 1** Shows the system diagram. Red box at the left represents the input hardware (keybaord). Red box at the right represents the output hardware (screen). In between, we can find the processing in the big overarching box (Windows 11, 16GB RAM, 12th Gen Intel), the coding language used (Python 3.10.11) in the smaller box. In the smallest box, we have the Python file that runs the code and the Python libraries (ledger_lib.py made by developer and others external) that it pulls from. We also have the csv files the program stores information in such as user verification and balances.
 
 ## Flow Diagrams
 ### Login system
-
-<sub>**Fig. 2** Flow diagram for the registration system. Note: there is some Python code in the operations.
-
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/8fc2647a-d868-49f9-9f20-b193298fedc2)
+<sub> ***Fig. 2** shows the flow diagram for the login system. Keep in mind that the user is not logged in by default and that the correct username and password are found in the orange csv file.
+### Explanation
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/3c3c2a6b-80f3-42dd-b817-cb4d0d6752c7)
+### Validate and Return User Input
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/9dcdeea6-7ede-4501-987b-2a6526ebe84d)
+<sub> **Fig. 4** shows the flow diagram for taking in and validating user input. The parameters to meet depend on the function the validation is working with and are defined accordingly.
+### Explanation
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/24018a32-a501-4397-b4be-d8c72391d90c)
+### Looping Function Chooser
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/fc136438-73b3-486e-a885-9b4efc025d80)
+<sub> **Fig. 5** shows how the program loops and runs a function based on user input, unless they choose to exit the program. It is built on a while loop and many if statements.
+### Explanation
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/481b5b32-a746-4d42-8a41-404e03ac41ed)
 ## Record of Tasks
 | Task No | Planned Action                           | Planned Outcome                                                                          | Time estimated | Target completion date | Criterion |
 |---------|------------------------------------------|------------------------------------------------------------------------------------------|----------------|------------------------|-----------|
