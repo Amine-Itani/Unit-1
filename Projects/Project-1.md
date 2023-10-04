@@ -20,15 +20,14 @@ I will to design and make an electronic ledger for Ms. Sato who is interested in
 Considering Ms. Sato's problem, the ledger will provide user-friendly and easy-to-understand functions that allow Ms. Sato to learn important statistics about the currency she's invested in as well as organize her transactions in a comprehensible way. It will also fetch real-time information about the crypto from the Web, helping Ms. Sato make informed decisions on her finances, and the ledger will be kept secure via a login system. Moreover, using Python is beneficial for Ms. Sato because it's a high-level (easy to understand) language that allowed her developer to code it quickly, therefore delivering it to her earlier than he would have using another language and avoiding prolonging her suffering with her spreadsheet. It also compiles quickly, reducing the time Ms. Sato would have to wait to get her ledger running, and is free, keeping the developer from having to pass down any costs on Ms. Sato.
 
 ## What is KlimaDAO, and why should Ms. Sato use it?
-https://docs.klimadao.finance/
-KlimaDAO is a decentralized autonomous organization and cryptocurrencies with many different benefits over other cryptocurrencies, which are the reason why the developer chose it for Ms. Sato.  
+KlimaDAO<sup>1</sup> is a decentralized autonomous organization and cryptocurrencies with many different benefits over other cryptocurrencies, which are the reason why the developer chose it for Ms. Sato.  
 KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to collecting funds for carbon offseting projects everytime it is traded. Many big polluting companies (such as airlines) invest in cryptocurrencies such as KlimaDAO in order to offset the carbon they produce.
 
 ### Benefits of KlimaDAO:
 
-- **Profit**🤑: As the effects of climate change become more and more evident, the general public pushes companies to explore more ways of becoming carbon neutral, and carbon crediting is the perfect solution to that problem. Companies find it much easier to invest in carbon crediting cryptos like KlimaDAO instead of other solutions, driving the price of these cryptocurrencies up. This means huge return on investment for Ms. Sato.
-- **Transperency**🤝: The mechanisms of KlimaDAO are all open-source and verified by external sources, guaranteeing Ms. Sato (as much as is reasonably possible) that the crypto she is investing in is not a scam. Websites mascarading as trustworthy cryptos have become increasingly popular, and the developer wants to make sure that Ms. Sato is getting the most reliable cryptocurrency she can. https://www.klimadao.finance/blog/klimadao-analysis-of-the-base-carbon-tonne
-- **Environmentalism**🌱: Most cryptocurrencies till this day use a lot of processing power in order to crypt and decypt individual instinces of their coin in the blockchain. This uses a lot of energy, and accelerates climate change, especially if the source of that energy is fossil fuel. Assuming that Ms. Sato cares about environmental issues, investing in KlimaDAO instead of other cryptocurrencies can help her avoid having a negative impact on the environment. https://www.techopedia.com/bitcoin-mining-and-energy-statistics#:~:text=According%20to%20a%20White%20House,computers%20in%20the%20United%20States. 
+- **Profit**🤑: As the effects of climate change become more and more evident, the general public pushes companies to explore more ways of becoming carbon neutral, and carbon crediting is the perfect solution to that problem. Companies find it much easier to invest in carbon crediting cryptos like KlimaDAO instead of other solutions, driving the price of these cryptocurrencies up. This means huge return on investment for Ms. Sato.<sup>2</sup>
+- **Transperency**🤝: The mechanisms of KlimaDAO are all open-source and verified by external sources, guaranteeing Ms. Sato (as much as is reasonably possible) that the crypto she is investing in is not a scam. Websites mascarading as trustworthy cryptos have become increasingly popular, and the developer wants to make sure that Ms. Sato is getting the most reliable cryptocurrency she can.<sup>3</sup>
+- **Environmentalism**🌱: Most cryptocurrencies till this day use a lot of processing power in order to crypt and decypt individual instinces of their coin in the blockchain. This uses a lot of energy, and accelerates climate change, especially if the source of that energy is fossil fuel. Assuming that Ms. Sato cares about environmental issues, investing in KlimaDAO instead of other cryptocurrencies can help her avoid having a negative impact on the environment.<sup>4</sup> 
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
@@ -46,20 +45,21 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 
 ## Flow Diagrams
 ### Login system
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/8fc2647a-d868-49f9-9f20-b193298fedc2)
-<sub> ***Fig. 2** shows the flow diagram for the login system. Keep in mind that the user is not logged in by default and that the correct username and password are found in the orange csv file.
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/8fc2647a-d868-49f9-9f20-b193298fedc2) <br>
+<sub> **Fig. 2** shows the flow diagram for the login system. Keep in mind that the user is not logged in by default and that the correct username and password are found in the orange csv file.
 ### Explanation
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/3c3c2a6b-80f3-42dd-b817-cb4d0d6752c7)
 ### Validate and Return User Input
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/9dcdeea6-7ede-4501-987b-2a6526ebe84d)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/9dcdeea6-7ede-4501-987b-2a6526ebe84d) <br>
 <sub> **Fig. 4** shows the flow diagram for taking in and validating user input. The parameters to meet depend on the function the validation is working with and are defined accordingly.
 ### Explanation
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/24018a32-a501-4397-b4be-d8c72391d90c)
 ### Looping Function Chooser
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/fc136438-73b3-486e-a885-9b4efc025d80)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/fc136438-73b3-486e-a885-9b4efc025d80) <br>
 <sub> **Fig. 5** shows how the program loops and runs a function based on user input, unless they choose to exit the program. It is built on a while loop and many if statements.
 ### Explanation
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/481b5b32-a746-4d42-8a41-404e03ac41ed)
+
 ## Record of Tasks
 | Task No | Planned Action                           | Planned Outcome                                                                          | Time estimated | Target completion date | Criterion |
 |---------|------------------------------------------|------------------------------------------------------------------------------------------|----------------|------------------------|-----------|
@@ -73,10 +73,10 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 - For loops
 - While loops
 - Open with and read lines (csv files)
-- User Input
-- Web Scraping --> BeautifulSoup 4 https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-- Default Dictionary
-- ASCII squares multiplication --> graphs in terminal
+- Taking User Input
+- Web Scraping --> BeautifulSoup 4<sup>5</sup> (made by Leonard Richardson), scraped from https://crypto.com/price/klimadao
+- Default Dictionary<sup>6</sup> (module originally made by Raymond Hettinger)
+- ASCII squares multiplication --> graphs in terminal<sup>7</sup> (originally by Bob Bemer)
 ## Functions
 
 ### Login System
@@ -151,7 +151,7 @@ def klimadao_price():
     output = soup.find('span', class_ ="chakra-text css-13hqrwd").text.strip('$ USD') # .find method returns specific part of html code asked for in class_ argument
     return output 
 ```
-This is a function that fetches the rate of KlimaDAO on the dollar from the internet. It does this by by having imported the function BeautifulSoup, which is a web scraper made by Leonard Richardson to allow programmers to access information on the web through Python (https://www.crummy.com/software/BeautifulSoup/bs4/doc/). The function created for the ledger request the page as text from a url specified (in this case: https://crypto.com/price/klimadao), and parces the texts with the html parcer 'html5lib', turning the text from the instance requested into an html page under the variable 'soup'. The method .find then goes through  the html code and returns only that which is specified in the parameter class_. A similar function and tool is used in predicting Ms. Sato's return on investment. The flow diagram for this function can be found in **Figure 5**
+This is a function that fetches the rate of KlimaDAO on the dollar from the internet. It does this by by having imported the function BeautifulSoup<sup>5</sup>, which is a web scraper made by Leonard Richardson to allow programmers to access information on the web through Python. The function created for the ledger request the page as text from a url specified (in this case: https://crypto.com/price/klimadao), and parces the texts with the html parcer 'html5lib', turning the text from the instance requested into an html page under the variable 'soup'. The method .find then goes through  the html code and returns only that which is specified in the parameter class_. A similar function and tool is used in predicting Ms. Sato's return on investment. The flow diagram for this function can be found in **Figure 5**
 
 ### Deafult Dictionary Sums
 ```.py
@@ -169,7 +169,7 @@ def sum_by_date():
         date_sums[date] += int(amount) # add extracted amount to the second value in the dictionary pair
     return date_sums
 ```
-This function creates a dictionary with a sum of all transactions from a day paired with that date. The defaultdict (https://www.geeksforgeeks.org/defaultdict-in-python/) allows us to avoid any errors if the csv file has misinputs and also makes entering values into it easier, as we do not need to specify which pair each value has to go in. That is instead done through indexing. 
+This function creates a dictionary with a sum of all transactions from a day paired with that date. The defaultdict<sup>6</sup> allows us to avoid any errors if the csv file has misinputs and also makes entering values into it easier, as we do not need to specify which pair each value has to go in. That is instead done through indexing. 
 ### Graphing
 ```.py
 def day_balance():
@@ -189,4 +189,14 @@ def day_balance():
         graph += f"{date}: {graph_var * (total // 10)}{total} USD {warning}\n"
     return graph
 ```
-This functions prints a graph that shows Ms. Sato's earning or loss by day. This means that if she were to take out 2000 usd and deposit 1000 on a given day, the graph would show -1000, regardless of transactions made on other days. This will help her keep trak of her financial stability better. The graph is made through reading the default dictionary created in sum_by_date function, finding the balance of that day, and multipliying them with a square "▩" from the ASCII code (https://www.alt-codes.net/square-symbols). Before multiplication though, we divide the multiplier by 10 to keep the graph manageable in the terminal.
+This functions prints a graph that shows Ms. Sato's earning or loss by day. This means that if she were to take out 2000 usd and deposit 1000 on a given day, the graph would show -1000, regardless of transactions made on other days. This will help her keep trak of her financial stability better. The graph is made through reading the default dictionary created in sum_by_date function, finding the balance of that day, and multipliying them with a square "▩" from the ASCII code<sup>7</sup>. Before multiplication though, we divide the multiplier by 10 to keep the graph manageable in the terminal.
+
+## Citations
+1. DAO, Klima. “Introducing Klimadao.” KlimaDAO, Mar. 2023, docs.klimadao.finance/.
+2. DAO, Klima. “Frequently Asked Questions about Klima Infinity.” KlimaDAO, 2023, www.klimadao.finance/blog/klima-infinity-faqs. 
+3. DAO, Klima. “Klimadao Impact Report: Analysis of the Base Carbon Tonne.” KlimaDAO, 2023, www.klimadao.finance/blog/klimadao-analysis-of-the-base-carbon-tonne.
+4. Kolesnikov, Nicole. “60+ Bitcoin Mining and Energy Statistics Updated for 2023 - Techopedia.” Technopedia, 2023, www.techopedia.com/bitcoin-mining-and-energy-statistics.
+5. Richardson, Leonard. “Beautiful Soup Documentation¶.” Beautiful Soup Documentation - Beautiful Soup 4.12.0 Documentation, 2004, www.crummy.com/software/BeautifulSoup/bs4/doc/.
+6. Hettinger, Raymond. “Defaultdict in Python.” GeeksforGeeks, GeeksforGeeks, 10 Jan. 2023, www.geeksforgeeks.org/defaultdict-in-python/.
+7. Bemer, Bob. “Square Symbols.” Alt Codes Symbols, 2021, www.alt-codes.net/square-symbols.
+8. 
