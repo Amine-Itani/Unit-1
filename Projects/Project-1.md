@@ -44,21 +44,21 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 <sub>**Fig. 1** Shows the system diagram. Red box at the left represents the input hardware (keybaord). Red box at the right represents the output hardware (screen). In between, we can find the processing in the big overarching box (Windows 11, 16GB RAM, 12th Gen Intel), the coding language used (Python 3.10.11) in the smaller box. In the smallest box, we have the Python file that runs the code and the Python libraries (ledger_lib.py made by developer and others external) that it pulls from. We also have the csv files the program stores information in such as user verification and balances.
 
 ## Flow Diagrams
-### Login system
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/8fc2647a-d868-49f9-9f20-b193298fedc2) <br>
-<sub> **Fig. 2** shows the flow diagram for the login system. Keep in mind that the user is not logged in by default and that the correct username and password are found in the orange csv file.
-### Explanation
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/3c3c2a6b-80f3-42dd-b817-cb4d0d6752c7)
+### Simple Login
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/fb9e7b07-d922-453c-9d70-419cb902ea71)<br>
+<sub> **Fig. 2** shows the flow diagram for the login system. 
+#### Explanation
+Important to note that the user is logged out by default, and that Ms. Sato set the username and password with the developer before receiving her program, therefore they are already in the csv file. The way the simple login works is that it looks at all the lines in the csv file containing the username and password and compares that to the users input. If both parameters match, the program will continue, and if either or both do not match, the program will terminate.
 ### Validate and Return User Input
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/9dcdeea6-7ede-4501-987b-2a6526ebe84d) <br>
-<sub> **Fig. 4** shows the flow diagram for taking in and validating user input. The parameters to meet depend on the function the validation is working with and are defined accordingly.
-### Explanation
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/24018a32-a501-4397-b4be-d8c72391d90c)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/6fb85e55-db79-45fc-b236-a5d0cc6334a6) <br>
+<sub> **Fig. 3** shows the flow diagram for taking in and validating user input. 
+#### Explanation
+The parameters to meet depend on the function the validation is working with and are defined accordingly. The function could be checking if the input is within a certain raneg of integers (used for menu selecting) or could be checking if it is an integer in the first place (used for deposit.withdrawal)
 ### Looping Function Chooser
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/fc136438-73b3-486e-a885-9b4efc025d80) <br>
-<sub> **Fig. 5** shows how the program loops and runs a function based on user input, unless they choose to exit the program. It is built on a while loop and many if statements.
-### Explanation
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/481b5b32-a746-4d42-8a41-404e03ac41ed)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/741d2205-2baa-4826-b898-4f6435f78579)<br>
+<sub> **Fig. 4** shows how the program loops and runs a function based on user input, unless they choose to exit the program. 
+#### Explnation
+This function is built on a while loop and many if statements. When the while loop is running, it will check if the input of the user is between 1 and 6, and will run the respective functions depending on the value of the user input. 6 is exit, so it will break out of the while loop and terminate the program. Values between 1 and 5 each run their own function then end by returning the choice as -1, which is outside of 1-6. This makes the while loop start over and gives the user the option to choose another function or exit with 6.
 
 ## Record of Tasks
 | Task No | Planned Action                           | Planned Outcome                                                                          | Time estimated | Target completion date | Criterion |
@@ -98,7 +98,7 @@ if access == False: # uname or pass incorrect, attempts exceeded
 if access == True: # access granted
     # continue ledger functions
 ```
-Ms. Sato requires a system to protect their private data. I thought about using a login system to accomplish this using a while loop and if statements. This login system is good because it allows for attempts to be made in the case of typos, and returns feedback (errors). The while loops continues when access is false and attempts > 0, and asks for user input, which the if statements check with the csv file where usernames and passwords are saved (more on reading csv files in a later function) to verify them. The while loop also decreases attempts by 1 from 3 to eventually stop the program if too many attempts (>3) are made. If access is true, the if statements will allow the program to keep going. The flow diagram for this function is show in **Figure 2**.
+Ms. Sato requires a system to protect their private data. I thought about using a login system to accomplish this using a while loop and if statements. This login system is good because it allows for attempts to be made in the case of typos, and returns feedback (errors). The while loops continues when access is false and attempts > 0, and asks for user input, which the if statements check with the csv file where usernames and passwords are saved (more on reading csv files in a later function) to verify them. The while loop also decreases attempts by 1 from 3 to eventually stop the program if too many attempts (>3) are made. If access is true, the if statements will allow the program to keep going. The flow diagram for a simpler version of this function can be found in **Fig. 2**.
 
 ### Deposits and Withdrawals
 ```.py
@@ -135,7 +135,7 @@ def take_validate_user_input(msg, menu):
         option = input(msg) # ask for input again
     return int(option)
 ```
-Although this function is quite simple, it is the blueprint of all other input validations that happen in this program. It is important because it makes sure that all other functions receive imputs that are in the right range and type. It also returns user feedback as errors. It uses a while loop that only exits if the input is the same as what is expected. As the while loop continues, it asks and waits for user input, keeping it from looping forever. In other validation, it functions this same, but instead checks if the input is in a given list of choices. The flow diagram for this function can be found in **Figure 4**
+Although this function is quite simple, it is the blueprint of all other input validations that happen in this program. It is important because it makes sure that all other functions receive imputs that are in the right range and type. It also returns user feedback as errors. It uses a while loop that only exits if the input is the same as what is expected. As the while loop continues, it asks and waits for user input, keeping it from looping forever. In other validation, it functions this same, but instead checks if the input is in a given list of choices. The flow diagram for this function can be found in **Fig. 3**
 
 ### Web Scraping
 ```.py
