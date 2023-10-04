@@ -20,15 +20,15 @@ I will to design and make an electronic ledger for Ms. Sato who is interested in
 Considering Ms. Sato's problem, the ledger will provide user-friendly and easy-to-understand functions that allow Ms. Sato to learn important statistics about the currency she's invested in as well as organize her transactions in a comprehensible way. It will also fetch real-time information about the crypto from the Web, helping Ms. Sato make informed decisions on her finances, and the ledger will be kept secure via a login system. Moreover, using Python is beneficial for Ms. Sato because it's a high-level (easy to understand) language that allowed her developer to code it quickly, therefore delivering it to her earlier than he would have using another language and avoiding prolonging her suffering with her spreadsheet. It also compiles quickly, reducing the time Ms. Sato would have to wait to get her ledger running, and is free, keeping the developer from having to pass down any costs on Ms. Sato.
 
 ## What is KlimaDAO, and why should Ms. Sato use it?
-
+https://docs.klimadao.finance/
 KlimaDAO is a decentralized autonomous organization and cryptocurrencies with many different benefits over other cryptocurrencies, which are the reason why the developer chose it for Ms. Sato.  
 KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to collecting funds for carbon offseting projects everytime it is traded. Many big polluting companies (such as airlines) invest in cryptocurrencies such as KlimaDAO in order to offset the carbon they produce.
 
 ### Benefits of KlimaDAO:
 
 - **Profit**🤑: As the effects of climate change become more and more evident, the general public pushes companies to explore more ways of becoming carbon neutral, and carbon crediting is the perfect solution to that problem. Companies find it much easier to invest in carbon crediting cryptos like KlimaDAO instead of other solutions, driving the price of these cryptocurrencies up. This means huge return on investment for Ms. Sato.
-- **Transperency**🤝: The mechanisms of KlimaDAO are all open-source and verified by external sources, guaranteeing Ms. Sato (as much as is reasonably possible) that the crypto she is investing in is not a scam. Websites mascarading as trustworthy cryptos have become increasingly popular, and the developer wants to make sure that Ms. Sato is getting the most reliable cryptocurrency she ca.
-- **Environmentalism**🌱: Most cryptocurrencies till this day use a lot of processing power in order to crypt and decypt individual instinces of their coin in the blockchain. This uses a lot of energy, and accelerates climate change, especially if the source of that energy is fossil fuel. Assuming that Ms. Sato cares about environmental issues, investing in KlimaDAO instead of other cryptocurrencies can help her avoid having a negative impact on the environment.
+- **Transperency**🤝: The mechanisms of KlimaDAO are all open-source and verified by external sources, guaranteeing Ms. Sato (as much as is reasonably possible) that the crypto she is investing in is not a scam. Websites mascarading as trustworthy cryptos have become increasingly popular, and the developer wants to make sure that Ms. Sato is getting the most reliable cryptocurrency she can. https://www.klimadao.finance/blog/klimadao-analysis-of-the-base-carbon-tonne
+- **Environmentalism**🌱: Most cryptocurrencies till this day use a lot of processing power in order to crypt and decypt individual instinces of their coin in the blockchain. This uses a lot of energy, and accelerates climate change, especially if the source of that energy is fossil fuel. Assuming that Ms. Sato cares about environmental issues, investing in KlimaDAO instead of other cryptocurrencies can help her avoid having a negative impact on the environment. https://www.techopedia.com/bitcoin-mining-and-energy-statistics#:~:text=According%20to%20a%20White%20House,computers%20in%20the%20United%20States. 
 
 ## Success Criteria
 1. The electronic ledger is a text-based software (Runs in the Terminal).
@@ -57,7 +57,13 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 | 3       | Create code for login funciton           | Login code tested and funcitonal                                                         | 20 min         | Sep 14                 | C         |
 
 # Criteria C: Development
-
+## Tools Used
+- If statememts
+- For loops
+- While loops
+- Open with and read lines (csv files)
+- User Input
+- Web Scraping --> BeautifulSoup 4 https://www.crummy.com/software/BeautifulSoup/bs4/doc/ 
 ## Functions
 
 ### Login System
@@ -79,10 +85,11 @@ if access == False: # uname or pass incorrect, attempts exceeded
 if access == True: # access granted
     # continue ledger functions
 ```
-Ms. Sato requires a system to protect their private data. I thought about using a login system to accomplish this using a while loop and if statements. The while loops continues when access is false and attempts > 0, and asks for user input, which the if statements check with the csv file where usernames and passwords are saved (more on reading csv files in a later function) to verify them. The while loop also decreases attempts by 1 from 3 to eventually stop the program if too many attempts (+3) are made. If access is true, the if statements will allow the program to keep going. The flow diagram for this function is show in **Figure 2**.
+Ms. Sato requires a system to protect their private data. I thought about using a login system to accomplish this using a while loop and if statements. The while loops continues when access is false and attempts > 0, and asks for user input, which the if statements check with the csv file where usernames and passwords are saved (more on reading csv files in a later function) to verify them. The while loop also decreases attempts by 1 from 3 to eventually stop the program if too many attempts (>3) are made. If access is true, the if statements will allow the program to keep going. The flow diagram for this function is show in **Figure 2**.
 
 ### Deposits and Withdrawals
 ```.py
+import datetime
 def deposit(choice):
     '''
     This function appends a deposit or withdrawal to the csv file with the date it was commited.
@@ -96,6 +103,77 @@ def deposit(choice):
     with open('ledger.csv', mode='a') as f:  # appending deposit/withdrawal
         line = f"{date},{amount * multiplier}\n" # defining line as date and amount 
         f.writelines(line) # writing lines in csv file
-    print(f"\n{yellow}Klima conversion: {amount} USD --> {round(amount / klima_price)} KLIMA today{end_code}\n{green}Saved.{end_code} "
+    print(f"\n{yellow}Klima conversion: {amount} USD --> {round(amount / klima_price)} KLIMA today{end_code}\n{green}Saved.{end_code} " # klima_price is web scraped
           f"Thank you for recording your transaction in this ledger. Hope to see you again soon!\nThis deposit was made on {date}\n{green_seperator}")  # User Feedback
 ```
+This function allows Ms. Sato to deposit or withdrawal money from her ledger. When Ms. Sato withdrawals money, she enters an integer that is validated by another function (more on that later), just as she would for withdrawals. The way the algorith differentiates between taking in and taking out money is through multiplying the input value by -1 if Ms. Sato chooses withdrawal. The variable klima_price is web scrapped, which will be covered in another explanation, and the datetime function is imported. The function also uses the 'with' and 'open' functions to read the csv file and defines mode as a to append user inputs. The flow diagram for this function can be found in **Figure 3**.
+
+### Take and Validate User Input
+```.py
+def take_validate_user_input(msg, menu):
+    '''
+    This function takes in user input and validates it is an integer or prints an error.
+    :return: The value/Error Message
+    '''
+    option = input(msg)
+    while not option.isdigit(): # when option is not a digit
+        print(f'\n{bold_red}ERROR. Please input one of the options displayed above{end_code}\n{red_seperator}')
+        main_menu(menu, 0) # print menu
+        option = input(msg) # ask for input again
+    return int(option)
+```
+Although this function is quite simple, it is the blueprint of all other input validations that happen in this program. It uses a while loop that only exits if the input is the same as what is expected. As the while loop continues, it asks and waits for user input, keeping it from looping forever. In other validation, it functions this same, but instead checks if the input is in a given list of choices. The flow diagram for this function can be found in **Figure 4**
+
+### Web Scraping
+```.py
+from bs4 import BeautifulSoup
+def klimadao_price():
+    '''
+    This function fetches the conversion rate of KlimaDAO to USD whenever the program is run
+    :return: The price of KlimaDAO to USD now
+    '''
+    url = "https://crypto.com/price/klimadao" # Website used
+    page = requests.get(url) # Requesting specifically the page to inspect it's lines
+    soup = BeautifulSoup(page.text, 'html5lib') # Using parser and that page as text to set soup as the whole html of the page
+    output = soup.find('span', class_ ="chakra-text css-13hqrwd").text.strip('$ USD') # .find method returns specific part of html code asked for in class_ argument
+    return output 
+```
+This is a function that fetches the rate of KlimaDAO on the dollar from the internet. It does this by by having imported the function BeautifulSoup, which is a web scraper made by Leonard Richardson to allow programmers to access information on the web through Python (https://www.crummy.com/software/BeautifulSoup/bs4/doc/). The function created for the ledger request the page as text from a url specified (in this case: https://crypto.com/price/klimadao), and parces the texts with the html parcer 'html5lib', turning the text from the instance requested into an html page under the variable 'soup'. The method .find then goes through  the html code and returns only that which is specified in the parameter class_. A similar function and tool is used in predicting Ms. Sato's return on investment. The flow diagram for this function can be found in **Figure 5**
+
+### Deafult Dictionary Sums
+```.py
+from collections import defaultdict
+def sum_by_date():
+    '''
+    This function sums the transactions of every day into a balance for that day.
+    :return: Every day's respective balance
+    '''
+    date_sums = defaultdict(int) # create dictionary with unique, editable, pairs
+    with open('ledger.csv', mode='r') as f: # reading and extracting balances from csv file
+        data = f.readlines()
+    for line in data: # for loop that iterates for every entry in the csv file
+        date, amount = line.strip().split(',')
+        date_sums[date] += int(amount) # add extracted amount to the second value in the dictionary pair
+    return date_sums
+```
+This function creates a dictionary with a sum of all transactions from a day paired with that date. The defaultdict (https://www.geeksforgeeks.org/defaultdict-in-python/) allows us to avoid any errors if the csv file has misinputs and also makes entering values into it easier, as we do not need to specify which pair each value has to go in. That is instead done through indexing. 
+### Graphing
+```.py
+def day_balance():
+    '''
+    This function prints colored graphs with warnings in case of poor finances.
+    :return: the graph
+    '''
+    # ommited: defining graph and warning message variables
+    date_sum = sum_by_date()
+    print(f"{blue}Your earning/loss by day.{end_code} Earning is printed in {green}green{end_code}, and loss is printed in {red}red{end_code}.")
+    for date, total in date_sum.items(): # ommited: if statements that adds warning message
+        if total < 0:
+            graph_var = f'{red}▩{end_code}'
+            total *= -1
+        else:
+            graph_var = f"{green}▩{end_code}"
+        graph += f"{date}: {graph_var * (total // 10)}{total} USD {warning}\n"
+    return graph
+```
+This functions prints a graph that shows Ms. Sato's earning or loss by day. This means that if she were to take out 2000 usd and deposit 1000 on a given day, the graph would show -1000, regardless of transactions made on other days. This will help her keep trak of her financial stability better. The graph is made through reading the default dictionary created in sum_by_date function, finding the balance of that day, and multipliying them with a square "▩" from the ASCII code (https://www.alt-codes.net/square-symbols). Before multiplication though, we divide the multiplier by 10 to keep the graph manageable in the terminal.
