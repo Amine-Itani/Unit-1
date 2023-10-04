@@ -33,9 +33,9 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger displays the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows user to enter, withdraw and record transactions.
-4. The electronic ledger will offer useful statistics about whether Ms. Sato has profited today, her most profitable day by day change, and her total amount in USD compared to intial investement. It will also predict value in a month based on yesterday to today.
-5. The electronic ledger will connect to an API to fetch the price of KlimaDAO upon opening any of the ledgers sub-menus.
-6. The electronic ledger will be organized with tables and graphs.
+4. The electronic ledger will offer useful statistics as graphs on day-by-day earning and loss. It will also predict value of investment based on percentage change from yesterday to today.
+5. The electronic ledger will connect to the internet to fetch the price of KlimaDAO upon opening any of the ledgers sub-menus.
+6. The electronic ledger will be protected by a login system that will save while the program is running for convenience.
 
 # Criteria B: Design
 
@@ -223,7 +223,7 @@ def day_balance():
 This functions prints a graph that shows Ms. Sato's earning or loss by day. This means that if she were to take out 2000 usd and deposit 1000 on a given day, the graph would show -1000, regardless of transactions made on other days. This will help her keep trak of her financial stability better. This function meets Ms. Sato's need for useful, comprehensive, statistics well because the color of the graph changes depending on whether she is earning or losing money. It also prints a warning message if she is more than $400 USD in debt on a given day. The graph is made through reading the default dictionary created in sum_by_date function, finding the balance of that day, and multipliying them with a square "▩" from the ASCII code<sup>7</sup>. Before multiplication though, we divide the multiplier by 10 to keep the graph manageable in the terminal.
 
 ## Video
-
+https://drive.google.com/file/d/16CJrYfpnZovEK4D792y5blg3dJbqokG7/view?usp=sharing 
 
 ## Citations
 1. DAO, Klima. “Introducing Klimadao.” KlimaDAO, Mar. 2023, docs.klimadao.finance/.
