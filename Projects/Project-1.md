@@ -50,7 +50,7 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 #### Explanation
 Important to note that the user is logged out by default, and that Ms. Sato set the username and password with the developer before receiving her program, therefore they are already in the csv file. The way the simple login works is that it looks at all the lines in the csv file containing the username and password and compares that to the users input. If both parameters match, the program will continue, and if either or both do not match, the program will terminate.
 ### Validate and Return User Input
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/6fb85e55-db79-45fc-b236-a5d0cc6334a6) <br>
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/3711bedf-4bff-4442-90d3-2b31feca0592) <br>
 <sub> **Fig. 3** shows the flow diagram for taking in and validating user input. 
 #### Explanation
 The parameters to meet depend on the function the validation is working with and are defined accordingly. The function could be checking if the input is within a certain raneg of integers (used for menu selecting) or could be checking if it is an integer in the first place (used for deposit.withdrawal)
