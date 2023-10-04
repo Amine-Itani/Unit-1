@@ -15,7 +15,7 @@ Apart for this requirements, Ms Sato is open to explore a cryptocurrency selecte
 
 I will to design and make an electronic ledger for Ms. Sato who is interested in crypto curency trading, and I've chosen KlimaDAO for her. The algorithm will organize Ms. Sato's transaction while providing useful statistics and security. The ledger is constructed using the software Python 3.10.11 and will take about 3 weeks to complete.
 
-## Proposed Solution
+## Proposed Solution & Justification
 
 Considering Ms. Sato's problem, the ledger will provide user-friendly and easy-to-understand functions that allow Ms. Sato to learn important statistics about the currency she's invested in as well as organize her transactions in a comprehensible way. It will also fetch real-time information about the crypto from the Web, helping Ms. Sato make informed decisions on her finances, and the ledger will be kept secure via a login system. Moreover, using Python is beneficial for Ms. Sato because it's a high-level (easy to understand) language that allowed her developer to code it quickly, therefore delivering it to her earlier than he would have using another language and avoiding prolonging her suffering with her spreadsheet. It also compiles quickly, reducing the time Ms. Sato would have to wait to get her ledger running, and is free, keeping the developer from having to pass down any costs on Ms. Sato.
 
@@ -63,7 +63,9 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 - While loops
 - Open with and read lines (csv files)
 - User Input
-- Web Scraping --> BeautifulSoup 4 https://www.crummy.com/software/BeautifulSoup/bs4/doc/ 
+- Web Scraping --> BeautifulSoup 4 https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+- Default Dictionary
+- ASCII squares multiplication --> graphs in terminal
 ## Functions
 
 ### Login System
