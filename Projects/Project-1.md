@@ -74,7 +74,7 @@ KlimaDAO is a cryptocurrency based on carbon crediting, and contributes to colle
 - While loops
 - Open with and read lines (csv files)
 - Taking User Input
-- Web Scraping --> BeautifulSoup 4<sup>5</sup> (made by Leonard Richardson), scraped from https://crypto.com/price/klimadao
+- Web Scraping --> BeautifulSoup 4<sup>5</sup> (made by Leonard Richardson), scraped from crypto.com<sup>8</sup>
 - Default Dictionary<sup>6</sup> (module originally made by Raymond Hettinger)
 - ASCII squares multiplication --> graphs in terminal<sup>7</sup> (originally by Bob Bemer)
 ## Functions
@@ -98,7 +98,7 @@ if access == False: # uname or pass incorrect, attempts exceeded
 if access == True: # access granted
     # continue ledger functions
 ```
-Ms. Sato requires a system to protect their private data. I thought about using a login system to accomplish this using a while loop and if statements. The while loops continues when access is false and attempts > 0, and asks for user input, which the if statements check with the csv file where usernames and passwords are saved (more on reading csv files in a later function) to verify them. The while loop also decreases attempts by 1 from 3 to eventually stop the program if too many attempts (>3) are made. If access is true, the if statements will allow the program to keep going. The flow diagram for this function is show in **Figure 2**.
+Ms. Sato requires a system to protect their private data. I thought about using a login system to accomplish this using a while loop and if statements. This login system is good because it allows for attempts to be made in the case of typos, and returns feedback (errors). The while loops continues when access is false and attempts > 0, and asks for user input, which the if statements check with the csv file where usernames and passwords are saved (more on reading csv files in a later function) to verify them. The while loop also decreases attempts by 1 from 3 to eventually stop the program if too many attempts (>3) are made. If access is true, the if statements will allow the program to keep going. The flow diagram for this function is show in **Figure 2**.
 
 ### Deposits and Withdrawals
 ```.py
@@ -108,18 +108,18 @@ def deposit(choice):
     This function appends a deposit or withdrawal to the csv file with the date it was commited.
     :return: Thank you message (feedback) and main menu
     '''
-    multiplier = 1 # If withdrawal is picked, the multiplier is set to -1, turning the appended number in the csv file negative
-    word_choice = 'withdrawal' # Word_choice variable used to correspond word in feedback msg to the action requested
-    # These are determined by simple if statements that take user input that are omitted here, and validated by a different function
-    amount = take_validate_user_input(msg=f"{deposit_prompt} {word_choice}:", menu="") # Take in user input
+    multiplier = 1 # If withdrawal, the multiplier is set to -1, turning the number appended negative
+    word_choice = 'withdrawal'
+    # These are determined by simple if statements that take user input that are omitted here
+    amount = take_validate_user_input(msg=f"{deposit_prompt} {word_choice}:", menu="")
     date = datetime.date.today()  # creating the date with the datetime imported function
     with open('ledger.csv', mode='a') as f:  # appending deposit/withdrawal
-        line = f"{date},{amount * multiplier}\n" # defining line as date and amount 
+        line = f"{date},{amount * multiplier}\n" 
         f.writelines(line) # writing lines in csv file
     print(f"\n{yellow}Klima conversion: {amount} USD --> {round(amount / klima_price)} KLIMA today{end_code}\n{green}Saved.{end_code} " # klima_price is web scraped
           f"Thank you for recording your transaction in this ledger. Hope to see you again soon!\nThis deposit was made on {date}\n{green_seperator}")  # User Feedback
 ```
-This function allows Ms. Sato to deposit or withdrawal money from her ledger. When Ms. Sato withdrawals money, she enters an integer that is validated by another function (more on that later), just as she would for withdrawals. The way the algorith differentiates between taking in and taking out money is through multiplying the input value by -1 if Ms. Sato chooses withdrawal. The variable klima_price is web scrapped, which will be covered in another explanation, and the datetime function is imported. The function also uses the 'with' and 'open' functions to read the csv file and defines mode as a to append user inputs. The flow diagram for this function can be found in **Figure 3**.
+This function allows Ms. Sato to deposit or withdrawal money from her ledger. This function is practical doesn't need Ms. Sato to input a negative number if she withdraws, as it does that automcatically when the withdraw function is picked. The user feedback is also accurate as it chooses between including deposit or withdraw in further messages after the choice is made by the user. When Ms. Sato withdrawals money, she enters an integer that is validated by another function (more on that later), just as she would for withdrawals. The way the algorith differentiates between taking in and taking out money is through multiplying the input value by -1 if Ms. Sato chooses withdrawal. The variable klima_price is web scrapped, which will be covered in another explanation, and the datetime function is imported. The function also uses the 'with' and 'open' functions to read the csv file and defines mode as a to append user inputs. The flow diagram for this function can be found in **Figure 3**.
 
 ### Take and Validate User Input
 ```.py
@@ -135,7 +135,7 @@ def take_validate_user_input(msg, menu):
         option = input(msg) # ask for input again
     return int(option)
 ```
-Although this function is quite simple, it is the blueprint of all other input validations that happen in this program. It uses a while loop that only exits if the input is the same as what is expected. As the while loop continues, it asks and waits for user input, keeping it from looping forever. In other validation, it functions this same, but instead checks if the input is in a given list of choices. The flow diagram for this function can be found in **Figure 4**
+Although this function is quite simple, it is the blueprint of all other input validations that happen in this program. It is important because it makes sure that all other functions receive imputs that are in the right range and type. It also returns user feedback as errors. It uses a while loop that only exits if the input is the same as what is expected. As the while loop continues, it asks and waits for user input, keeping it from looping forever. In other validation, it functions this same, but instead checks if the input is in a given list of choices. The flow diagram for this function can be found in **Figure 4**
 
 ### Web Scraping
 ```.py
@@ -151,7 +151,7 @@ def klimadao_price():
     output = soup.find('span', class_ ="chakra-text css-13hqrwd").text.strip('$ USD') # .find method returns specific part of html code asked for in class_ argument
     return output 
 ```
-This is a function that fetches the rate of KlimaDAO on the dollar from the internet. It does this by by having imported the function BeautifulSoup<sup>5</sup>, which is a web scraper made by Leonard Richardson to allow programmers to access information on the web through Python. The function created for the ledger request the page as text from a url specified (in this case: https://crypto.com/price/klimadao), and parces the texts with the html parcer 'html5lib', turning the text from the instance requested into an html page under the variable 'soup'. The method .find then goes through  the html code and returns only that which is specified in the parameter class_. A similar function and tool is used in predicting Ms. Sato's return on investment. The flow diagram for this function can be found in **Figure 5**
+This is a function that fetches the rate of KlimaDAO on the dollar from the internet. It is pragmatic because it doesn not need to open the browser and wait 5-10 seconds as many other parsers and web scrapers have to. It also strips the return of all html code but keeps the dash sign in order to differentiate between positive and negative numbers. It does this by by having imported the function BeautifulSoup<sup>5</sup>, which is a web scraper made by Leonard Richardson to allow programmers to access information on the web through Python. The function created for the ledger request the page as text from a url specified (in this case: https://crypto.com/price/klimadao), and parces the texts with the html parcer 'html5lib', turning the text from the instance requested into an html page under the variable 'soup'. The method .find then goes through  the html code and returns only that which is specified in the parameter class_. A similar function and tool is used in predicting Ms. Sato's return on investment. The flow diagram for this function can be found in **Figure 5**
 
 ### Deafult Dictionary Sums
 ```.py
@@ -189,7 +189,7 @@ def day_balance():
         graph += f"{date}: {graph_var * (total // 10)}{total} USD {warning}\n"
     return graph
 ```
-This functions prints a graph that shows Ms. Sato's earning or loss by day. This means that if she were to take out 2000 usd and deposit 1000 on a given day, the graph would show -1000, regardless of transactions made on other days. This will help her keep trak of her financial stability better. The graph is made through reading the default dictionary created in sum_by_date function, finding the balance of that day, and multipliying them with a square "▩" from the ASCII code<sup>7</sup>. Before multiplication though, we divide the multiplier by 10 to keep the graph manageable in the terminal.
+This functions prints a graph that shows Ms. Sato's earning or loss by day. This means that if she were to take out 2000 usd and deposit 1000 on a given day, the graph would show -1000, regardless of transactions made on other days. This will help her keep trak of her financial stability better. This function meets Ms. Sato's need for useful, comprehensive, statistics well because the color of the graph changes depending on whether she is earning or losing money. It also prints a warning message if she is more than $400 USD in debt on a given day. The graph is made through reading the default dictionary created in sum_by_date function, finding the balance of that day, and multipliying them with a square "▩" from the ASCII code<sup>7</sup>. Before multiplication though, we divide the multiplier by 10 to keep the graph manageable in the terminal.
 
 ## Citations
 1. DAO, Klima. “Introducing Klimadao.” KlimaDAO, Mar. 2023, docs.klimadao.finance/.
@@ -199,4 +199,4 @@ This functions prints a graph that shows Ms. Sato's earning or loss by day. This
 5. Richardson, Leonard. “Beautiful Soup Documentation¶.” Beautiful Soup Documentation - Beautiful Soup 4.12.0 Documentation, 2004, www.crummy.com/software/BeautifulSoup/bs4/doc/.
 6. Hettinger, Raymond. “Defaultdict in Python.” GeeksforGeeks, GeeksforGeeks, 10 Jan. 2023, www.geeksforgeeks.org/defaultdict-in-python/.
 7. Bemer, Bob. “Square Symbols.” Alt Codes Symbols, 2021, www.alt-codes.net/square-symbols.
-8. 
+8. .Com, Crypto. “Klimadao Price: Klima Price, USD Converter, Charts.” Https://Crypto.Com/Price/Klimadao, 5 Oct. 2023, crypto.com/price/klimadao. 
