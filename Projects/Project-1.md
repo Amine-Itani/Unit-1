@@ -222,6 +222,9 @@ def day_balance():
 ```
 This functions prints a graph that shows Ms. Sato's earning or loss by day. This means that if she were to take out 2000 usd and deposit 1000 on a given day, the graph would show -1000, regardless of transactions made on other days. This will help her keep trak of her financial stability better. This function meets Ms. Sato's need for useful, comprehensive, statistics well because the color of the graph changes depending on whether she is earning or losing money. It also prints a warning message if she is more than $400 USD in debt on a given day. The graph is made through reading the default dictionary created in sum_by_date function, finding the balance of that day, and multipliying them with a square "▩" from the ASCII code<sup>7</sup>. Before multiplication though, we divide the multiplier by 10 to keep the graph manageable in the terminal.
 
+## Video
+
+
 ## Citations
 1. DAO, Klima. “Introducing Klimadao.” KlimaDAO, Mar. 2023, docs.klimadao.finance/.
 2. DAO, Klima. “Frequently Asked Questions about Klima Infinity.” KlimaDAO, 2023, www.klimadao.finance/blog/klima-infinity-faqs. 
