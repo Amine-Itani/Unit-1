@@ -2,7 +2,7 @@
 In this quiz, we created a function that returned a multiplication table of a number inputed. We used an if statement to check whether the number was in betwenn 2 and 10, and a for loop to create the string. This would've made the second grade so much easier!
 
 ## Inputs & Outputs
-![Uploading image.png…]()
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/7bda78a6-bd2b-427e-8075-82ec06e5939c)
 
 ## Code
 
