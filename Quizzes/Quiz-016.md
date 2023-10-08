@@ -1,5 +1,5 @@
 # Quiz 016
-Easy one this time around. It's nice to have a break every once in a while.
+Easy one this time around. It's nice to have a break every once in a while. Quarter one of quizzes done!
 ## Input & Output
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/a18f922b-a782-4604-9250-3c37f71e72ca)
 
