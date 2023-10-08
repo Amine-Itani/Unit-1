@@ -1,7 +1,8 @@
 # Quiz ?
 
-## Input
+## Input & Output
 
+<sub>Fig.1 shows the given of the task
 ## Code
 
 ```py
@@ -10,10 +11,10 @@
 
 ## Evidence
 
-<sub>Fig.1 shows results of the program
+<sub>Fig.2 shows results of the program
 
 ## Flowchart
 
-<sub>Fig.2 shows the flowchart of the program
+<sub>Fig.3 shows the flowchart of the program
 
 
