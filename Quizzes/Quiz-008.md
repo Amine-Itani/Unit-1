@@ -27,5 +27,5 @@ for x in range(len(units2)):
 <sub>Fig.1 shows results of the program
 
 ## Flowchart
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/ba25b07b-22ea-42a6-a7fa-41ac995d84d8)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/a0d387fb-03bb-4bdd-a831-f950d3c556fd)
 <sub>Fig.2 shows results of the program
