@@ -1,8 +1,9 @@
 # Quiz 014
 This quiz was both easier and harder than other blackboxes of its kind. It was easier to figure out the pattern, but much harder to code. Dr. Ruben explained it in class and then it seemed easier. <br>
 For future reference, indices are really useful with for loops when it comes to iterating through every character in a string or every item in a list.
-## Input
-
+## Inputs & Outputs
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/29aea05d-a597-4fdf-ab93-9e0013ac086c)
+<sub>Fig. 1 shows inputs and outputs of given program
 ## Code
 
 ```py
@@ -31,8 +32,8 @@ print(out)
 
 ## Evidence
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/bd688cdf-6567-400f-9940-66a8457af146)
-<sub>Fig.1 shows results of the program
+<sub>Fig. 2 shows results of program
 
 ## Flowchart
-
-<sub>Fig.2 shows results of the program
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/2fe4e90f-7639-438e-b6ef-3ce9fc41dd12)
+<sub>Fig.3 shows flowchart of program
