@@ -1,4 +1,4 @@
-# Quiz 011
+# Quiz 012
 This quiz was similar to a brain teaser. We were given inputs and their output through a mystery box (an algorithm we don't know). From that we figured out that a specfic mathematical equation was being employed to create those outputs that applied to all inputs
 
 ## Input & Output
