@@ -2,7 +2,7 @@
 
 ## Input & Output
 
-<sub>Fig.1 shows the given of the task
+<sub>Fig.1 shows the given task
 ## Code
 
 ```py
