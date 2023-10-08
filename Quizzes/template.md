@@ -11,10 +11,10 @@
 
 ## Evidence
 
-<sub>Fig. 2 shows results of the program
+<sub>Fig. 2 shows results of program
 
 ## Flowchart
 
-<sub>Fig. 3 shows flowchart of the program
+<br><sub>Fig. 3 shows flowchart of program
 
 
