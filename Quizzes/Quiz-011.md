@@ -1,7 +1,7 @@
 # Quiz 011
 This quiz was similar to a brain teaser. We were given inputs and their output through a mystery box (an algorithm we don't know). From that we figured out that a specfic mathematical equation was being employed to create those outputs that applied to all inputs
 
-## Input & Outpt
+## Input & Output
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/06f6c1fc-07f6-4f9d-a15a-e2e3f7b2dd74)
 <sub>Fig. 1 shows given inputs and ouputs of the task
 ## Code
