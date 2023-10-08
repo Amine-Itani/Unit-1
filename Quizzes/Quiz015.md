@@ -30,4 +30,4 @@ print(trial)
 
 ## Flowchart
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/e7007229-a1fd-47b6-9cd8-a6aa45f6aadc)<br>
-<sub>Fig. 3 shows flowchart of program
+<br><sub>Fig. 3 shows flowchart of program
