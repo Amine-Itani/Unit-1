@@ -1,6 +1,9 @@
-# Quiz 009
+# Quiz 010
 For this quiz, we created an algorithm that presents all the days in a month in a calender fashion. This algorithm will also allow the user to input their month (theoretically their birthday month), and receive an accurate calendar of that month
 
+## Input & Output
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/dffbb287-9169-4a8a-ba38-df1264c6f870)
+<sub>Fig.1 shows the given task
 ## Code
 
 ```py
@@ -39,8 +42,8 @@ print(case1)
 
 ## Evidence
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/2098a12c-e3ae-46b7-b826-309aa4492cb8)
-<sub>Fig.1 shows results of the program
+<sub>Fig.2 shows results of the program
 
 ## Flowchart
 
-<sub>Fig.2 shows results of the program
+<sub>Fig.3 shows the flowchart of the program
