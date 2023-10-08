@@ -1,7 +1,11 @@
 # Quiz 013
-This quiz is our third blackbox. I was quite worried since the last one was pretty challenging for me, but it was actually quite simple. I think I overthought it last time.
+This quiz is our third blackbox. I was quite worried since the last one was pretty challenging for me, but it was actually quite simple. I think I overthought it last time.<br>
+This program took in two strings A and B, and printed A as many times as there were characters in B (not counting spaces!).
 
-## Input
+## Input & Ouput
+**Not found on the quizzzes slideshow.**<br>
+_Input:_ A:"qwerty" B:"lol lol"<br>
+_Output_: "qwertyqwertyqwertyqwertyqwertyqwerty"
 
 ## Code
 
