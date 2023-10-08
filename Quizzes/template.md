@@ -15,6 +15,6 @@
 
 ## Flowchart
 
-<br><sub>Fig. 3 shows flowchart of program
+<sub>Fig. 3 shows flowchart of program
 
 
