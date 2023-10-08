@@ -3,7 +3,6 @@ Similar to Quiz 011, this quiz was another blackbox. This one took me longer tha
 The answer involved squaring input A then adding input B.
 
 ## Input & Output
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/e2ac77e6-b664-40e7-80c7-c6d6a168b0b5)
 <sub>Fig. 1 shows inputs and ouputs of given task
 
 ## Code
