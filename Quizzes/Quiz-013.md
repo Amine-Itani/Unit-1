@@ -4,7 +4,7 @@ This program took in two strings A and B, and printed A as many times as there w
 
 ## Input & Ouput
 **Not found on the quizzzes slideshow.**<br>
-_Input:_ A:"qwerty" B:"lol lol"<br>
+_Input:_   A:"qwerty"  B:"lol lol"<br>
 _Output_: "qwertyqwertyqwertyqwertyqwertyqwerty"
 
 ## Code
