@@ -2,7 +2,7 @@
 
 ## Input & Output
 
-<sub>Fig.1 shows the given intput and outputs of the task
+<sub>Fig.1 shows given intput and outputs of task
 ## Code
 
 ```py
@@ -15,6 +15,6 @@
 
 ## Flowchart
 
-<sub>Fig.3 shows the flowchart of the program
+<sub>Fig.3 shows flowchart of the program
 
 
