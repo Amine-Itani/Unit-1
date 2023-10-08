@@ -1,4 +1,6 @@
 # Quiz 015
+Complicated quiz, but not impossible. Learned how to write and think with trace tables in this quiz.<br>
+The trace table method of thinking has been quite useful with projects so far, especially when troubleshooting malfuctioning code.
 
 ## Input & Output
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/5fd3d97e-d10f-4462-8437-0b0fe1abdae4)
