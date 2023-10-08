@@ -1,5 +1,8 @@
-# Quiz 010
+# Quiz 011
 In this quiz, we created a function that returned a multiplication table of a number inputed. We used an if statement to check whether the number was in betwenn 2 and 10, and a for loop to create the string. This would've made the second grade so much easier!
+
+## Inputs & Outputs
+![Uploading image.png…]()
 
 ## Code
 
