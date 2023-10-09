@@ -1,7 +1,8 @@
 # Quiz 016
-Easy one this time around. It's nice to have a break every once in a while. Quarter one of quizzes done!
+Easy one this time around. It's nice to have a break every once in a while. This quiz marks the end of my first quarter of compsci at ISAK.
 ## Input & Output
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/a18f922b-a782-4604-9250-3c37f71e72ca)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/113eeacd-e83c-4767-aea0-660cf598d47d)
+
 
 <sub>Fig. 1 shows given intput and outputs of task
 ## Code
