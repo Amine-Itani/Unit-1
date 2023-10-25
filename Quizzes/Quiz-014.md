@@ -35,5 +35,5 @@ print(out)
 <sub>Fig. 2 shows results of program
 
 ## Flowchart
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/2fe4e90f-7639-438e-b6ef-3ce9fc41dd12)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/b3fd3f86-8bf0-446b-9203-5eb94359751b)
 <sub>Fig.3 shows flowchart of program
