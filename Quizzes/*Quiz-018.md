@@ -1,6 +1,8 @@
 # Quiz 018
-For this quiz, we used python to print out truth tables we're learning about in our second unit. This could be useful in the future!
+For this quiz, we used python to print out truth tables we're learning about in our second unit. This could be useful in the future! <br>
+We also have to write down the circuit and truth table for the **equation (b): Light = S<sub>1</sub>S<sub>2</sub> + (S<sub>2</sub> + S<sub>3</sub>(notS<sub>1</sub>))S<sub>1</sub>**
 ## Input & Output
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/6609673b-5fc3-47ae-8556-500e09c6478b)
 
 <sub>Fig. 1 shows given intput and outputs of task
 ## Code
@@ -40,3 +42,12 @@ print(table)
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/e4ea527b-9131-4fc7-9ee0-f3fa0e2bf8d1)
 
 <sub>Fig. 3 shows flowchart of program
+
+## Circuit
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/a9ed54f0-8927-4bed-afeb-bed3aba9f9fc)
+
+<sub>Fig. 4 shows circuit of equation (b)
+
+## Truth Table
+
+<sub>Fig. 5 shows truth table of equation (b)
