@@ -38,7 +38,7 @@ print(table)
 <sub>Fig. 3 shows flowchart of program
 
 ## Circuit
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/a9ed54f0-8927-4bed-afeb-bed3aba9f9fc)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/b0d52543-bdda-450c-85ba-d1d6fbf5d8c6)
 
 <sub>Fig. 4 shows circuit of equation (b)
 
