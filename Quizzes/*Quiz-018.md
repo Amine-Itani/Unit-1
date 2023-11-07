@@ -9,27 +9,21 @@ We also have to write down the circuit and truth table for the **equation (b): L
 
 ```py
 def get_truth():
-    truth = '' # define variables
-    a = 0
-    b = 0
-    c = 0
-    a_count = 0
-    b_count = 0
-    truth += f"| A | B | C |\n"
+    truth, a, b, c = '| A | B | C |\n', 1, 1, 1 # define variables, consolidated to one line
     for x in range(8):
-        truth += f"| {a} "
-        a_count += 1
-        if a_count%4 == 0:
-            a = int(not a)
-        truth += f"| {b} "
-        b_count += 1
-        if b_count%2 == 0:
-            b = int(not b)
-        truth += f"| {c} |\n"
+        if x % 4 == 0: # switch on every 4
+            a = int(not(a))
+        if x % 2 == 0: # switch on every 2
+            b = int(not(b))
+        c = int(not(c)) # switch everytime
+        truth += f'| {a} | {b} | {c} |\n' # append to returned var
+
     return truth
 
-table = get_truth()
+table = get_truth() # test funtion
 print(table)
+
+
 ```
 
 ## Evidence
