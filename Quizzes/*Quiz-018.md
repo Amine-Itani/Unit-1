@@ -32,8 +32,7 @@ print(table)
 <sub>Fig. 2 shows results of program
 
 ## Flowchart
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/22dae095-5bcf-4598-9f61-553d5bb80d4c)
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/e4ea527b-9131-4fc7-9ee0-f3fa0e2bf8d1)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/c7f19b2a-af93-4823-ab22-b3d5a9e3a777)
 
 <sub>Fig. 3 shows flowchart of program
 
