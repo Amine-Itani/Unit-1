@@ -27,7 +27,7 @@ print(table)
 ```
 
 ## Evidence
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/56f5588a-424f-4de2-a70b-7dc7941ca8ad)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/d1f94541-181c-475e-a185-b5aaa7ec5022)
 
 <sub>Fig. 2 shows results of program
 
