@@ -9,7 +9,7 @@ We also have to write down the circuit and truth table for the **equation (b): L
 
 ```py
 def get_truth():
-    truth, a, b, c = '| A | B | C |\n', 1, 1, 1 # define variables, consolidated to one line
+    truth, a, b, c = '| A | B | C |\n', 1, 1, 1 # define variables, consolidated to one line, starts at 1 for indexing
     for x in range(8):
         if x % 4 == 0: # switch on every 4
             a = int(not(a))
