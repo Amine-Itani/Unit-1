@@ -1,6 +1,7 @@
 # Quiz 021
 This was our first quiz using data science and matlabplot. We used the equation and the randomly generated integers to plot the graph.
 ## Input & Output
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/2c4bea48-8baa-44d1-bf87-d2095eef63f8)
 
 <sub>Fig. 1 shows given intput and outputs of task
 ## Code
@@ -29,6 +30,7 @@ plt.show()
 
 ## Evidence
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/6ef77983-b0eb-4016-8608-68968159c5b7)
+
 <sub>Fig. 2 shows results of program
 
 ## Truth Table
