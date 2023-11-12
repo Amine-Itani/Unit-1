@@ -31,6 +31,14 @@ plt.show()
 ![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/6ef77983-b0eb-4016-8608-68968159c5b7)
 <sub>Fig. 2 shows results of program
 
-## Flowchart
+## Truth Table
+### A(A ⊕ B)
 
-<sub>Fig. 3 shows flowchart of program
+| A B | A XOR B | A(A XOR B) |
+|-----|---------|------------|
+| 0 0 |    0    |      0     |
+| 0 1 |    1    |      0     |
+| 1 0 |    1    |      1     |
+| 1 1 |    0    |      0     |
+
+<sub>Fig. 3 shows truth table of equation
