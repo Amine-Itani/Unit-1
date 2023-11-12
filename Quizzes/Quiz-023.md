@@ -1,4 +1,5 @@
-# Quiz ?
+# Quiz 023
+Third data science quiz. This quiz coincided with my math lesson on absolute value functions, and building a graph from scratch on python actually helped me understand it better. Maybe data science has applications beyond data analysis but also learning.
 
 ## Input & Output
 
@@ -27,5 +28,12 @@ plt.show()
 <sub>Fig. 2 shows results of program
 
 ## Base Conversion
+### FFA5 to decimal
 
-<sub>Fig. 3 shows flowchart of program
+15 x 16<sup>3</sup> + 15 x 16<sup>2</sup> + 10 x 16<sup>1</sup> + 5 x <sup>0</sup> =
+
+61,440 + 3,840 + 160 + 5 = 
+
+**65,445**
+
+
