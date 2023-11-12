@@ -13,8 +13,12 @@
 
 <sub>Fig. 2 shows results of program
 
-## Flowchart
+## Truth Table
 
-<sub>Fig. 3 shows flowchart of program
+<sub>Fig. 3 shows truth table of equation
+
+## Circuit
+
+<sub>Fig. 4 shows circuit of equation
 
 
