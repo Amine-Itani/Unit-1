@@ -2,6 +2,7 @@
 Third data science quiz. This quiz coincided with my math lesson on absolute value functions, and building a graph from scratch on python actually helped me understand it better. Maybe data science has applications beyond data analysis but also learning.
 
 ## Input & Output
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/6f4a04c4-d79d-4236-862c-a4d95c2e2743)
 
 <sub>Fig. 1 shows given intput and outputs of task
 ## Code
