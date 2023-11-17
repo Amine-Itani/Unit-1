@@ -45,11 +45,11 @@ plt.show()
 <sub>Fig. 2 shows results of program
 
 ## Binary Conversion
-### #e6e627
+### #E6E627
 
-red = 248, green = 248, blue = 39
+red = 246, green = 246, blue = 39
 
-![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/a5e8d7a7-4553-48d3-b6c3-2723cae65dd2)
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/cfe5cc13-6eb8-44cb-ba94-1523b46a6f79)
 
 <sub>Fig. 3 shows the color represented by the RGB
 
