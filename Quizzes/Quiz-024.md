@@ -1,6 +1,8 @@
 # Quiz 024
+This quiz expands on scatterplots by making them much more readable and therefore useful. We use the numpy library to import the .polyfit method that takes x and y values and using linear regression to turn them into an ax + b linear function. This will probably the most applicable graph in projects and other situations. Also continuing base conversion, where this question asks us to convert hex to RGB. This confuses me because I thought RGB was usually expressed in hex, but I guess it can also be expressed in decimal.
 
 ## Input & Output
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/89934076-d771-45eb-9413-b965434ce3ea)
 
 <sub>Fig. 1 shows given intput and outputs of task
 ## Code
@@ -42,12 +44,14 @@ plt.show()
 
 <sub>Fig. 2 shows results of program
 
-## Truth Table
+## Binary Conversion
+### #e6e627
 
-<sub>Fig. 3 shows truth table of equation
+red = 248, green = 248, blue = 39
 
-## Circuit
+![image](https://github.com/Amine-Itani/Unit-1/assets/123438294/a5e8d7a7-4553-48d3-b6c3-2723cae65dd2)
 
-<sub>Fig. 4 shows circuit of equation
+<sub>Fig. 3 shows the color represented by the RGB
+
 
 
